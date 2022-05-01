@@ -4,7 +4,7 @@ import SectionTitle from '../SectionTitle';
 import ProjectItem from './ProjectItem';
 import { Container } from './styles';
 
-interface Iproject {
+interface IProject {
   slug: string;
   title: string;
   type: string;
@@ -14,7 +14,7 @@ interface Iproject {
 }
 
 interface ProjectsProps {
-  projects: Iproject[];
+  projects: IProject[];
 }
 
 function Projects({ projects }: ProjectsProps) {
