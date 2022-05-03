@@ -11,7 +11,6 @@ interface ProjectProps {
   type: string;
   slug: string;
   img: string;
-
 }
 
 export default function ProjectItem({ title, type, slug, img }: ProjectProps) {

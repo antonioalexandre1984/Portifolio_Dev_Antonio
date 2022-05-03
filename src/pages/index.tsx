@@ -25,7 +25,7 @@ interface IProject {
 }
 
 interface HomeProps {
-  projects: IProject
+  projects: IProject[];
 }
 
 export default function Home({ projects }: HomeProps) {
@@ -54,7 +54,7 @@ export default function Home({ projects }: HomeProps) {
       <main className="container">
         <HomeHero />
         <Experiencias />
-        <Projects projects={[projects]} />
+        <Projects projects={projects} />
         <Knowledges />
         <FormContact />
       </main>
