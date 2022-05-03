@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable prettier/prettier */
 import BannerProject from '../../../components/BannerProject';
@@ -84,8 +85,6 @@ export const getStaticProps: GetStaticProps = async context => {
   const { slug } = context.params
 
   const response = await prismic.getByUID('project', String(slug), {});
-
-
 
   const project = {
     slug: response.uid,

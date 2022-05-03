@@ -1,4 +1,7 @@
-import { NextApiRequest, NextApiResponse } from "next";
+/* eslint-disable consistent-return */
+/* eslint-disable no-console */
+/* eslint-disable prettier/prettier */
+import { NextApiRequest, NextApiResponse } from 'next';
 import sendgridTransport from 'nodemailer-sendgrid-transport';
 import nodemailer from 'nodemailer';
 
@@ -27,13 +30,13 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
     transporter.sendMail(message, (err, info) => {
       if (err) {
+        // eslint-disable-next-line prettier/prettier
         console.log(err)
       } else {
         console.log('Message send', info);
       }
       return res.send('');
-
-    })
+    });
   } catch (err) {
     return res.json({
       error: true,
@@ -41,4 +44,3 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     });
   };
 };
-

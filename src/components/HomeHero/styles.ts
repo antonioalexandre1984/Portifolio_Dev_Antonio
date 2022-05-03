@@ -83,7 +83,7 @@ font-family:'jetBrains Mono',monospace ;
 font-weight: 300;
 color:#fff;
 width:24rem ;
-align-self:flex-start ;
+align-self:center ;
 transition: 1s !important;
 
 @media(max-width:1450px){

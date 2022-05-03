@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 /* eslint-disable prettier/prettier */
 import { HomeContainer } from "../styles/HomeStyles"
 import Header from '../components/Header';
@@ -70,7 +71,7 @@ export const getStaticProps: GetStaticProps = async () => {
     [Prismic.Predicates.at('document.type', 'project')],
     { orderings: '[document.first_publication_data desc]' }
   );
-  console.log(projectsResponse.results);
+
   const projects = projectsResponse.results.map(project => ({
     slug: project.uid,
     title: project.data.title,

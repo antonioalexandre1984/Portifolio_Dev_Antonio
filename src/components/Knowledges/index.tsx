@@ -10,7 +10,7 @@ import { Container } from './styles';
 function Knowledges() {
   return (
     <Container>
-      <SectionTitle title="knowledges" />
+      <SectionTitle title="Principais Stacks" />
       <section>
         <KnowledgeItem title="HTML" icon={<AiFillHtml5 />} />
         <KnowledgeItem title="CSS" icon={<FaCss3Alt />} />

@@ -18,7 +18,6 @@ interface ProjectsProps {
 }
 
 function Projects({ projects }: ProjectsProps) {
-
   return (
     <Container>
       <SectionTitle title="Ultimos Projetos" />
@@ -32,7 +31,6 @@ function Projects({ projects }: ProjectsProps) {
             slug={project.slug}
           />
         ))}
-
       </section>
       <button type="button">
         <Link href="/Projects">
